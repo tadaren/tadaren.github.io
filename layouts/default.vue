@@ -1,22 +1,7 @@
 <template>
   <div>
+    <Header />
     <section class="main-content columns">
-      <aside class="column is-2 section">
-        <ul class="menu-list">
-          <li
-            v-for="(item, key) of items"
-            :key="key"
-          >
-            <nuxt-link
-              :to="item.to"
-              exact-active-class="is-active"
-            >
-              <b-icon :icon="item.icon" /> {{ item.title }}
-            </nuxt-link>
-          </li>
-        </ul>
-      </aside>
-
       <div class="container column is-10">
         <nuxt />
       </div>
@@ -25,17 +10,11 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue';
+
 export default {
-  data () {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' }
-        },
-      ]
-    }
-  }
+  components: {
+    Header,
+  },
 }
 </script>
