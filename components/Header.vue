@@ -1,5 +1,5 @@
 <template>
-  <b-navbar>
+  <b-navbar right type="is-dark">
     <template slot="brand">
       <b-navbar-item to="/" tag="nuxt-link">
         Tadaren
