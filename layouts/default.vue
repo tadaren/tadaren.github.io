@@ -1,10 +1,8 @@
 <template>
   <div>
     <Header />
-    <section class="main-content columns">
-      <div class="container column is-10">
-        <nuxt />
-      </div>
+    <section class="section main-content">
+      <nuxt />
     </section>
   </div>
 </template>

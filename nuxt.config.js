@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/style.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -39,7 +40,7 @@ export default {
   */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy',
+    ['nuxt-buefy', { css: false }],
   ],
   /*
   ** Build configuration
