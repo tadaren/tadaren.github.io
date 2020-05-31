@@ -11,6 +11,29 @@
           私は誰?
         </p>
       </div>
+      <div class="column is-12">
+        <h3 class="title is-3">Skills</h3>
+        <ul class="columns">
+          <li class="column is-3">
+            <h4 class="title is-4">Kotlin</h4>
+            <div>
+              なんか書く
+            </div>
+          </li>
+          <li class="column is-3">
+            <h4 class="title is-4">Java</h4>
+            <div>
+              なんか書く
+            </div>
+          </li>
+          <li class="column is-3">
+            <h4 class="title is-4">Python</h4>
+            <div>
+              なんか書く
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
