@@ -13,27 +13,48 @@
       </div>
       <div class="column is-12">
         <h3 class="title is-3">Skills</h3>
-        <ul class="columns">
-          <li class="column is-3">
-            <h4 class="title is-4">Kotlin</h4>
-            <div>
-              なんか書く
-            </div>
-          </li>
-          <li class="column is-3">
-            <h4 class="title is-4">Java</h4>
-            <div>
-              なんか書く
-            </div>
-          </li>
-          <li class="column is-3">
-            <h4 class="title is-4">Python</h4>
-            <div>
-              なんか書く
-            </div>
+        <ul class="columns is-multiline is-mobile">
+          <li v-for="skill in skills" :key="skill.name" class="column is-2-desktop is-half-mobile">
+            <skill v-bind:skill="skill"></skill>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import Skill from '~/components/Skill.vue';
+
+export default {
+  components: {
+    Skill,
+  },
+  data() {
+    return {
+      skills: [
+        {
+          name: 'Kotlin',
+          content: '研究でも使用した言語で一番好きな言語',
+          imagePath: 'skills/kotlin.svg',
+        },
+        {
+          name: 'Java',
+          content: 'ゲーム制作に使用',
+          imagePath: 'skills/java.svg',
+        },
+        {
+          name: 'Python',
+          content: '課題や個人用ツールの作成に使用',
+          imagePath: 'skills/python.svg',
+        },
+        {
+          name: 'C++',
+          content: '競技プログラミングで使用している',
+          imagePath: 'skills/c-plusplus.svg',
+        }
+      ]
+    }
+  }
+}
+</script>
