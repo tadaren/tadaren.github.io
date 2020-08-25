@@ -3,7 +3,7 @@
     <h2 class="title is-2">About</h2>
     <div class="columns is-mobile is-multiline is-centered">
       <figure class="image is-128x128 column is-narrow">
-        <img class="is-rounded" src="icon.png" />
+        <img class="is-rounded" src="~static/icon.png" />
       </figure>
       <div class="column is-10">
         <h3 class="title is-4">ただれん(Tadaren)</h3>
@@ -36,22 +36,22 @@ export default {
         {
           name: 'Kotlin',
           content: '研究でも使用した言語で一番好きな言語',
-          imagePath: 'skills/kotlin.svg',
+          imagePath: '/skills/kotlin.svg',
         },
         {
           name: 'Java',
           content: 'ゲーム制作に使用',
-          imagePath: 'skills/java.svg',
+          imagePath: '/skills/java.svg',
         },
         {
           name: 'Python',
           content: '課題や個人用ツールの作成に使用',
-          imagePath: 'skills/python.svg',
+          imagePath: '/skills/python.svg',
         },
         {
           name: 'C++',
           content: '競技プログラミングで使用している',
-          imagePath: 'skills/c-plusplus.svg',
+          imagePath: '/skills/c-plusplus.svg',
         }
       ]
     }
