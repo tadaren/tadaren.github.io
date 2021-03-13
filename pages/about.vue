@@ -1,28 +1,20 @@
-<template>
-  <div class="container">
-    <h2 class="title is-2">About</h2>
-    <div class="columns is-mobile is-multiline is-centered">
-      <figure class="image is-128x128 column is-narrow">
-        <img class="is-rounded" src="~static/icon.png" />
-      </figure>
-      <div class="column is-10">
-        <h3 class="title is-4">ただれん(Tadaren)</h3>
-        <p>
-          私は誰?
-        </p>
-        <b-icon icon="twitter" href="https://twitter.com/tadaren_s"></b-icon>
-        <b-icon icon="github" href="https://github.com/tadaren"></b-icon>
-      </div>
-      <div class="column is-12">
-        <h3 class="title is-3">Skills</h3>
-        <ul class="columns is-multiline is-mobile">
-          <li v-for="skill in skills" :key="skill.name" class="column is-2-desktop is-4-mobile">
-            <skill v-bind:skill="skill"></skill>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  .container
+    h2.title.is-2 About
+    .columns.is-mobile.is-multiline.is-centered
+      figure.image.is-128x128.column.is-narrow
+        img.is-rounded(src='~static/icon.png')
+      .column.is-10
+        h3.title.is-4 ただれん(Tadaren)
+        p
+          | 私は誰?
+        b-icon(icon='twitter')
+        b-icon(icon='github')
+      .column.is-12
+        h3.title.is-3 Skills
+        ul.columns.is-multiline.is-mobile
+          li.column.is-2-desktop.is-4-mobile(v-for='skill in skills' :key='skill.name')
+            skill(v-bind:skill='skill')
 </template>
 
 <script>
