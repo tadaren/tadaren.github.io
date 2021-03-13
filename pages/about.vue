@@ -10,11 +10,13 @@
         <p>
           私は誰?
         </p>
+        <b-icon icon="twitter" href="https://twitter.com/tadaren_s"></b-icon>
+        <b-icon icon="github" href="https://github.com/tadaren"></b-icon>
       </div>
       <div class="column is-12">
         <h3 class="title is-3">Skills</h3>
         <ul class="columns is-multiline is-mobile">
-          <li v-for="skill in skills" :key="skill.name" class="column is-2-desktop is-half-mobile">
+          <li v-for="skill in skills" :key="skill.name" class="column is-2-desktop is-4-mobile">
             <skill v-bind:skill="skill"></skill>
           </li>
         </ul>
