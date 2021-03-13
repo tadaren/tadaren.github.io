@@ -8,8 +8,10 @@
         h3.title.is-4 ただれん(Tadaren)
         p
           | 私は誰?
-        b-icon(icon='twitter')
-        b-icon(icon='github')
+        a(href="https://twitter.com/tadaren_s" target="_blank" rel="noopener noreferrer")
+          b-icon(icon='twitter' size="is-medium")
+        a(href='https://github.com/tadaren' target="_blank" rel="noopener noreferrer")
+          b-icon(icon='github' size="is-medium")
       .column.is-12
         h3.title.is-3 Skills
         ul.columns.is-multiline.is-mobile
